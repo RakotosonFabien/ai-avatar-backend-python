@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# FastAPI & general logs
+*.log
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Pydantic cache
+__pydantic_cache__/
+
+# Mypy cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Ignore compiled protobuf (if any)
+*.pb2.py
+
+# SQLite or local DBs
+*.db
+*.sqlite3
+
+# NPM or frontend build in same repo (optional)
+node_modules/
