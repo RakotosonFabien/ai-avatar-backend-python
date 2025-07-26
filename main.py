@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import chat, speech
+from routers import chat, speech, discussion_memory
 
 app = FastAPI()
 
@@ -16,6 +16,7 @@ app.add_middleware(
 # app.include_router(chat.router)
 app.include_router(chat.router, prefix="/chat", tags=["chat"])
 app.include_router(speech.router, prefix="/speech", tags=["speech"])
+app.include_router(discussion_memory.router, prefix="/memory", tags=["memory"])
 
 @app.get("/")
 def read_root():
